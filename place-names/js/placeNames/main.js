@@ -4,12 +4,17 @@ const names = ["Nashville", "Hong Kong", "The back yard", "Earth",
 
 console.log("All Place Names")
 
+
 for (let name of names) {
     console.log(`${name}`)
 };
 
 
+console.log("\n");
+
+
 const namesThatStartsWithThe = names.filter(n => n.startsWith("The"))
-const namesWithRemovedComma = namesThatStartsWithThe.join(" ")
-console.log("'The' Place Names");;
-console.log(`${namesWithRemovedComma}`)
+console.log("'The' Place Names");
+for (let nameThatStartsWithThe of namesThatStartsWithThe) {
+    console.log(`${nameThatStartsWithThe}`);
+}
