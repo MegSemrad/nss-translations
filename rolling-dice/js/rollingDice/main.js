@@ -1,6 +1,6 @@
 console.log("Let's roll some dice, baby!")
 console.log("---------------------------")
-debugger
+
 const getRandomInt = (min, max) => {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -20,15 +20,12 @@ const dieFunction = () => {
     const addedDieValue = dieOne + dieTwo
 
     const message = `${dieOne} + ${dieTwo} === ${addedDieValue}`
-
     if (dieOne === dieTwo) {
-        console.log(`${dieOne} + ${dieTwo} === ${addedDieValue} DOUBLES!`)
+        console.log(message + "DOUBLES!")
     }
     else {
         console.log(message)
     }
 };
-
-
 
 runFunctionTenTimes()
